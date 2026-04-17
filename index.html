@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card | UfidX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <article data-testid="test-profile-card" class="profile-card">
+            
+            <figure class="profile-avatar-container">
+                <img data-testid="test-user-avatar" class="profile-avatar" src="https://avatars.githubusercontent.com/u/9919?s=280&v=4" alt="Headshot of Ibrahim Danjuma">
+            </figure>
+
+            <div class="profile-content">
+                <header>
+                    <h2 data-testid="test-user-name" class="profile-name">Ibrahim Danjuma</h2>
+                </header>
+
+                <p data-testid="test-user-bio" class="profile-bio">
+                    300L Computer Science undergraduate at FUTMinna and aspiring cloud-native software engineer. I specialize in full-stack JavaScript (MERN) and focus on building outcome-based, real-world solutions under my brand, UfidX.
+                </p>
+
+                <div class="profile-time-wrapper">
+                    <span class="time-label">Current Epoch Time:</span>
+                    <time data-testid="test-user-time" class="profile-time" aria-live="polite">Loading...</time>
+                </div>
+
+                <nav aria-label="Social links" class="social-nav">
+                    <ul data-testid="test-user-social-links" class="social-links" role="list">
+                        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+                        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+                    </ul>
+                </nav>
+
+                <div class="profile-lists">
+                    <section class="list-section">
+                        <h3>Hobbies</h3>
+                        <ul data-testid="test-user-hobbies" class="list-items">
+                            <li>Tech community leadership (GDGoC)</li>
+                            <li>Building full-stack architectural systems</li>
+                            <li>Mentorship and career strategizing</li>
+                        </ul>
+                    </section>
+
+                    <section class="list-section">
+                        <h3>Dislikes</h3>
+                        <ul data-testid="test-user-dislikes" class="list-items">
+                            <li>"Tutorial Hell" without practical application</li>
+                            <li>Agricultural waste in B2B logistics</li>
+                            <li>Unoptimized databases</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
